@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview",
-    "pages:dev": "vite build && wrangler pages dev dist"
+    "preview": "npm run build && wrangler dev",
+    "pages:dev": "vite build && wrangler pages dev dist",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
@@ -16,6 +17,7 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.43.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
