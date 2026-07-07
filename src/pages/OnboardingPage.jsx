@@ -4,6 +4,7 @@ import RegionSelect from "../components/onboarding/RegionSelect";
 import CompanionInput from "../components/onboarding/CompanionInput";
 import InterestTags from "../components/onboarding/InterestTags";
 import OptionalFields from "../components/onboarding/OptionalFields";
+import ContactForm from "../components/common/ContactForm";
 import { isActiveDistrict } from "../utils/regionData";
 import styles from "./pages.module.css";
 
@@ -75,6 +76,8 @@ export default function OnboardingPage({ onSubmit }) {
       <button type="button" className={styles.ctaButton} disabled={!isFormValid} onClick={handleSubmit}>
         행사 추천받기
       </button>
+
+      <ContactForm />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import DistanceFilter from "../components/events/DistanceFilter";
 import EventList from "../components/events/EventList";
 import Chip from "../components/common/Chip";
+import ContactForm from "../components/common/ContactForm";
 import { mockEvents } from "../data/mockEvents";
 import { getRecommendations } from "../utils/matchScore";
 import { INTEREST_CATEGORIES } from "../utils/constants";
@@ -50,6 +51,8 @@ export default function RecommendationPage({ profile, onEdit }) {
       </section>
 
       <EventList recommendations={recommendations} />
+
+      <ContactForm />
     </div>
   );
 }
