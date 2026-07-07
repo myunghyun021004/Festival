@@ -1,0 +1,92 @@
+.tabRow {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabActive {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--surface);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categoryTag {
+  align-self: flex-start;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.badge {
+  align-self: flex-start;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-contrast);
+  background: var(--accent-bg);
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 20px;
+  border: 1.5px dashed var(--border);
+  border-radius: 16px;
+}
+
+.emptyTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.emptyHint {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin: 0;
+}

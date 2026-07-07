@@ -1,0 +1,158 @@
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+/* Region select */
+.regionSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.select {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+  appearance: none;
+}
+
+.notice {
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.noticeButton {
+  align-self: flex-start;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Companion */
+.bigButtonRow {
+  display: flex;
+  gap: 12px;
+}
+
+.bigButton {
+  flex: 1;
+  padding: 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 14px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.bigButton:hover {
+  border-color: var(--primary);
+}
+
+.bigButtonSelected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-contrast);
+}
+
+.expandPanel {
+  margin-top: 14px;
+  animation: expand 0.18s ease;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional accordion */
+.accordion {
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  background: var(--surface-subtle);
+  border: none;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.accordionIcon {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.accordionBody {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-top: 1.5px solid var(--border);
+}
+
+.optionalRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.checkboxRow input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
